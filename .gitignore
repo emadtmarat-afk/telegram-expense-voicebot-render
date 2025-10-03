@@ -1,3 +1,6 @@
 credentials.json
 
 git rm --cached credentials.json
+
+git commit -m "🛡️ Remove credentials.json from repo"
+git push
