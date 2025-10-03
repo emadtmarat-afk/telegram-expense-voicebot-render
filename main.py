@@ -1,8 +1,8 @@
 from flask import Flask, request
+import utils
 
 app = Flask(__name__)
 
 @app.route('/', methods=['POST'])
 def webhook():
-    print("✅ Voice message received!")
-    return "OK", 200
+    return utils.handle_request(request)
