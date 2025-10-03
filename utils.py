@@ -11,7 +11,7 @@ from pydub import AudioSegment
 
 openai.api_key = os.environ.get("OPENAI_API_KEY")
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
-SHEET_ID = os.environ.get("SHEET_ID")
+SHEET_ID = os.environ.get("GOOGLE_SHEET_ID")
 
 # Google Sheets setup
 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
